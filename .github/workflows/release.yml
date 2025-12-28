@@ -32,6 +32,12 @@ jobs:
             echo "changed=false" >> $GITHUB_OUTPUT
           fi
 
+      - name: Install Linux dependencies
+        if: steps.version.outputs.changed == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libasound2-dev
+
       - name: Setup Rust
         if: steps.version.outputs.changed == 'true'
         uses: dtolnay/rust-toolchain@stable
