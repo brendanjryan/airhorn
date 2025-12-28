@@ -1,12 +1,30 @@
-# 🗣airhorn 🗣
+# 🗣 airhorn 🗣
 
-The airhorn soundclip you know and love, in the shell you know and love.
+The airhorn soundclip you know and love, in your terminal. 
 
-(only works on OSX, sorry...)
+
+# Preview
+
+<audio controls>
+  <source src="https://github.com/brendanjryan/airhorn/raw/main/assets/airhorn.wav" type="audio/wav">
+  Your browser does not support the audio element. <a href="https://github.com/brendanjryan/airhorn/raw/main/assets/airhorn.wav">Download the audio file</a>.
+</audio>
+
+Or [click here to preview the airhorn sound](https://github.com/brendanjryan/airhorn/raw/main/assets/airhorn.wav).
 
 ## Installation
 
-`go get -u github.com/brendanjryan/airhorn/cmd/airhorn`
+### From source (local)
+
+```bash
+cargo install --path .
+```
+
+### From crates.io
+
+```bash
+cargo install airhorn
+```
 
 ## Usage
 
@@ -19,5 +37,22 @@ make && airhorn
 
 git push && airhorn
 
-##etc...
+# etc...
 ```
+
+## Building from source
+
+```bash
+# Check formatting, linting, tests, and build
+make check
+
+# Build release binary
+make build
+
+# Run the airhorn
+make run
+```
+
+## License
+
+Apache-2.0

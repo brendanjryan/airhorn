@@ -1,0 +1,20 @@
+[package]
+name = "airhorn"
+version = "0.2.0"
+edition = "2021"
+rust-version = "1.75"
+authors = ["Brendan Ryan"]
+description = "The airhorn soundclip you know and love, in your terminal"
+license = "Apache-2.0"
+repository = "https://github.com/brendanjryan/airhorn"
+readme = "README.md"
+keywords = ["audio", "sound", "cli", "airhorn"]
+categories = ["command-line-utilities", "multimedia::audio"]
+
+[[bin]]
+name = "airhorn"
+path = "src/main.rs"
+
+[dependencies]
+rodio = "0.18"
+anyhow = "1.0"

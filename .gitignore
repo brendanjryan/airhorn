@@ -1,1 +1,22 @@
-cmd/airhorn/airhorn
+# Rust build artifacts
+/target/
+**/*.rs.bk
+*.pdb
+
+# Cargo.lock (keep for binary crates)
+# Cargo.lock
+
+# Editor files
+*.swp
+*.swo
+*~
+.DS_Store
+.idea/
+.vscode/
+*.iml
+
+# OS files
+Thumbs.db
+
+# Compiled binaries
+/airhorn

@@ -1,16 +1,26 @@
-deafult: build
+.PHONY: check test build fix clean doc run
 
-vet:
-	go tool vet .
-
-build:
-	go build -o ./cmd/airhorn/airhorn ./cmd/airhorn
+check:
+	cargo fmt --check
+	cargo clippy --all-targets -- -D warnings
+	cargo test
+	cargo build --release
 
 test:
-	go test ./...
+	cargo test --verbose
 
-docker:
-	docker build .
+build:
+	cargo build --release
+
+fix:
+	cargo fmt
+	cargo clippy --fix --allow-dirty --allow-staged
+
+clean:
+	cargo clean
+
+doc:
+	cargo doc --open
 
 run:
-	make && ./cmd/airhorn/airhorn
+	cargo run --release
