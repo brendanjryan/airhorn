@@ -16,5 +16,5 @@ name = "airhorn"
 path = "src/main.rs"
 
 [dependencies]
-rodio = "0.18"
+rodio = "0.21"
 anyhow = "1.0"
