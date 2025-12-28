@@ -1,4 +1,4 @@
-# 🗣 airhorn 🗣
+# 🗣 airhorn 
 
 The airhorn soundclip you know and love, in your terminal. 
 
