@@ -18,6 +18,7 @@ pub fn play_airhorn() -> Result<()> {
 
     sink.sleep_until_end();
 
+    // Explicitly drop to trigger any cleanup, but stderr is suppressed by main
     drop(_stream_handle);
 
     Ok(())
