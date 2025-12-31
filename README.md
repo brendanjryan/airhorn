@@ -6,11 +6,11 @@ The airhorn soundclip you know and love, in your terminal.
 # Preview
 
 <audio controls>
-  <source src="https://github.com/brendanjryan/airhorn/raw/main/assets/airhorn.wav" type="audio/wav">
-  Your browser does not support the audio element. <a href="https://github.com/brendanjryan/airhorn/raw/main/assets/airhorn.wav">Download the audio file</a>.
+  <source src="https://github.com/brendanjryan/airhorn/blob/master/assets/airhorn.wav" type="audio/wav">
+  Your browser does not support the audio element. <a href="https://github.com/brendanjryan/airhorn/raw/refs/heads/master/assets/airhorn.wav">Download the audio file</a>.
 </audio>
 
-Or [click here to preview the airhorn sound](https://github.com/brendanjryan/airhorn/raw/main/assets/airhorn.wav).
+Or [click here to preview the airhorn sound](https://github.com/brendanjryan/airhorn/blob/master/assets/airhorn.wav).
 
 ## Installation
 
